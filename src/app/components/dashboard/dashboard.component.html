@@ -1,0 +1,20 @@
+<div class="container pt-4">
+     <div class="row">
+         <div class="col-lg-4">
+             <app-map></app-map>
+          
+         </div>
+         <div class="col-lg-6">
+             <input [(ngModel)]="ciudad" type="text" class="form-control" placeholder="Ingrese ciudad">
+             <button (click)="obtenerClima()"class="btn btn-primary btn-lg btn-block mt-3"  [disabled]="ciudad==''">OBTENER CLIMA</button>
+           
+             <div class="card-mt-3">
+                 <div class="card-body">
+                     <p><b>Temperatura: </b>{{temperatura}}</p>
+                     <p><b>Humedad: </b>{{humedad}}</p>
+                     <p><b>Clima: </b>{{clima}}</p>
+
+                 </div>
+             </div>
+     </div>
+</div>
